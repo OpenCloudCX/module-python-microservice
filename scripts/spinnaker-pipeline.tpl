@@ -207,7 +207,7 @@
       "branch": "main",
       "enabled": true,
       "project": "OpenCloudCX",
-      "secret": "Clustered0_Drinkable_Rudder_Footsie",
+      "secret": "${github_hook_pw}",
       "slug": "python-flask-microservice-template",
       "source": "github",
       "type": "git"
