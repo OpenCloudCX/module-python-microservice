@@ -15,7 +15,7 @@ terraform {
 locals {
   name = "python-flask-microservice-build"
   jenkins_microservice_build_job = templatefile("${path.module}/scripts/python-flask-microservice.tpl", {
-    kubectl_version  = var.kubectl_version
+    kubectl_version = var.kubectl_version
     }
   )
 }
@@ -23,7 +23,7 @@ locals {
 locals {
   spinnaker_pipeline = templatefile("${path.module}/scripts/spinnaker-pipeline.tpl", {
     jenkins_job_name = local.name
-    github_hook_pw  = var.github_hook_pw
+    github_hook_pw   = var.github_hook_pw
     }
   )
 }
