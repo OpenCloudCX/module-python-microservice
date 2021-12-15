@@ -14,7 +14,7 @@ terraform {
 
 locals {
   name = "python-flask-microservice-build"
-  jenkins_microservice_build_job = templatefile("${path.module}/scripts/python-flask-microservice.tpl", {
+  jenkins_microservice_build_job = templatefile("${path.module}/scripts/jenkins-project.tpl", {
     kubectl_version = var.kubectl_version
     }
   )
